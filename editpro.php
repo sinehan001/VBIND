@@ -15,7 +15,7 @@
   </div>
   <?php
     $conn = mysqli_connect("localhost","root","","profile");
-    $res = mysqli_query($conn,"SELECT * from users WHERE email='sinehan001@gmail.com'");
+    $res = mysqli_query($conn,"SELECT * from users WHERE email='abc@gmail.com'");
     while($row=mysqli_fetch_assoc($res))
     {
   ?>
@@ -36,7 +36,7 @@
              }
              else
              {
-               echo "https://www.kindpng.com/picc/m/690-6904538_men-profile-icon-png-image-free-download-searchpng.png";
+               echo "img/img1.png";
              } ?>);">
             </div>
         </div>
@@ -95,7 +95,7 @@
     if($_SERVER['REQUEST_METHOD'] == "POST")
     {
     $conn = mysqli_connect("localhost","root","","profile");
-    $id = mysqli_query($conn,"SELECT id from users WHERE email='sinehan001@gmail.com'");
+    $id = mysqli_query($conn,"SELECT id from users WHERE email='abc@gmail.com'");
     if($row=mysqli_fetch_assoc($id));
     {
         $_SESSION['id']=$row['id'];

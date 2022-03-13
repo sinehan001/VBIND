@@ -3,7 +3,7 @@
     if($_SERVER['REQUEST_METHOD']=='POST')
     {
     $conn = mysqli_connect("localhost","root","","profile");
-    $id = mysqli_query($conn,"SELECT id from users WHERE email='sinehan001@gmail.com'");
+    $id = mysqli_query($conn,"SELECT id from users WHERE email='abc@gmail.com'");
     if($row=mysqli_fetch_assoc($id));
     {
         $_SESSION['id']=$row['id'];

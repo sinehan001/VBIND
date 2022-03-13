@@ -19,7 +19,7 @@
     width: 100%;
     height: 300px;
     <?php $conn=mysqli_connect("localhost","root","","profile");
-       $rescol = mysqli_query($conn,"SELECT * from users WHERE email='sinehan001@gmail.com'");
+       $rescol = mysqli_query($conn,"SELECT * from users WHERE email='abc@gmail.com'");
        while($col = mysqli_fetch_assoc($rescol))
        {
            $_SESSION['color'] = $col['pack'];
@@ -262,7 +262,7 @@
 <body>
     <?php
     $conn = mysqli_connect("localhost","root","","profile");
-    $res = mysqli_query($conn,"SELECT * from users WHERE email='sinehan001@gmail.com'");
+    $res = mysqli_query($conn,"SELECT * from users WHERE email='abc@gmail.com'");
     while($row=mysqli_fetch_assoc($res))
     {
     ?>
@@ -288,7 +288,7 @@
                     }
                     else 
                     {
-                        echo "https://www.kindpng.com/picc/m/690-6904538_men-profile-icon-png-image-free-download-searchpng.png";
+                        echo "img/img1.png";
                     } ?>">
                 </div>
                 <div class="g-stat">
