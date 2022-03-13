@@ -491,7 +491,7 @@ body{
   var a = document.getElementsByTagName('button')[
       <?php
           $conn = mysqli_connect("localhost","root","","profile");
-          $res = mysqli_query($conn,"SELECT * from users WHERE email='sinehan001@gmail.com'");
+          $res = mysqli_query($conn,"SELECT * from users WHERE email='abc@gmail.com'");
           while($row=mysqli_fetch_assoc($res))
           {
            if($row['pack']=='Free')
